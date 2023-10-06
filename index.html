@@ -19,6 +19,9 @@
           "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
           "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       }
+      h1 {
+        margin: 32px 0 0 32px;
+      }
       #cinema-list {
         padding: 32px;
         gap: 16px;
@@ -36,10 +39,31 @@
       .cinema h2 {
       }
 
+      ul {
+        display: flex;
+        list-style: none;
+        margin-bottom: 32px;
+      }
+
+      li {
+        height: 32px;
+        width: 32px;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 50%;
+        user-select: none;
+      }
+      li:hover {
+        background-color: #1a1d23;
+      }
       li.active {
-        background-color: red;
+        background-color: #23262c;
       }
     </style>
+    <h1>Liste des cinémas</h1>
     <div id="cinema-list"></div>
     <ul id="pagination"></ul>
   </body>
