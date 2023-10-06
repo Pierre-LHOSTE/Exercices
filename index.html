@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projet</title>
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: #101319;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
+      #cinema-list {
+        padding: 32px;
+        gap: 16px;
+      }
+
+      .cinema {
+        background-color: #1a1d23;
+        padding: 16px;
+        border-bottom: 2px solid #23262c;
+      }
+      .cinema p,
+      .cinema address {
+        opacity: 0.5;
+      }
+      .cinema h2 {
+      }
+
+      li.active {
+        background-color: red;
+      }
+    </style>
+    <div id="cinema-list"></div>
+    <ul id="pagination"></ul>
+  </body>
+</html>
